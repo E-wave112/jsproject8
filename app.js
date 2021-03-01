@@ -129,7 +129,7 @@ function displayMenuButtons(){
   },['all']); 
    const categoryBtns = categories.map(function(category){
      return  ` <li class="nav-item"><button class="filter-btn" type="button"
-      data-id=${category}>${category}</button> </li>`
+      data-id=${category}>${category}</button> </li> <br>`
    }).join('')
    navContainer.innerHTML = categoryBtns;
    const filterBtns = document.querySelectorAll('.filter-btn');
