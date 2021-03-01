@@ -93,6 +93,7 @@ const menu = [
 //select the section center
 const sectionCenter = document.querySelector('.section-center');
 const btnCointainer = document.querySelector('.btn-container');
+const navContainer = document.querySelector('.navbar-nav');
 
 window.addEventListener('DOMContentLoaded', ()=>{
 
@@ -127,10 +128,10 @@ function displayMenuButtons(){
     return values
   },['all']); 
    const categoryBtns = categories.map(function(category){
-     return  `<button class="filter-btn" type="button"
-      data-id=${category}>${category}</button>`
+     return  ` <li class="nav-item"><button class="filter-btn" type="button"
+      data-id=${category}>${category}</button> </li>`
    }).join('')
-   btnCointainer.innerHTML = categoryBtns;
+   navContainer.innerHTML = categoryBtns;
    const filterBtns = document.querySelectorAll('.filter-btn');
   
   //filter btn
