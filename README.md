@@ -1,3 +1,3 @@
 # jsproject8
 
-A simple selection menu filtering page
+A simple food selection menu filtering page
